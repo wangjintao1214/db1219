@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/" method="post">
+    <p>
+        产品代码<input type="text" name="id" >风险评级
+        <select name="risk">
+            <option value="0">--请选择--</option>
+            <option value="1">R1</option>
+            <option value="2">R2</option>
+            <option value="3">R3</option>
+        </select>
+        <input type="submit" value="查询">
+        <a href="/toadd" style="color: purple;margin-left: 30px;">新增理财信息</a>
+    </p>
+</form>
+<table border="1" width="600px">
+    <tr align="center" style="font-weight: bolder;">
+        <td>产品代码</td>
+        <td>风险评级</td>
+        <td>预期收益</td>
+        <td>发售起始日</td>
+        <td>发售截止日</td>
+        <td>产品到期日</td>
+    </tr>
+   <!-- <c:forEach items="${requestScope.list}" var="item">
+        <tr align="center">
+            <td>${item.id}</td>
+            <td>
+                <c:if test="${item.risk==1}">
+                    R1
+                </c:if>
+                <c:if test="${item.risk==2}">
+                    R2
+                </c:if>
+                <c:if test="${item.risk==3}">
+                    R3
+                </c:if>
+            </td>
+            <td>${item.income}</td>
+            <td><fmt:formatDate pattern="yyyy-MM-dd" value="${item.salestarting}" type="both"/></td>
+            <td><fmt:formatDate pattern="yyyy-MM-dd" value="${item.saleend}" type="both"/></td>
+            <td><fmt:formatDate pattern="yyyy-MM-dd" value="${item.end}" type="both"/></td>
+        </tr>
+    </c:forEach>-->
+</table>
+</body>
+</html>

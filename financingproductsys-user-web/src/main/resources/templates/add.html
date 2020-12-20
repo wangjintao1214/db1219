@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/doadd" method="post" style="width:480px; padding:10px;">
+    <h2 style="margin-left: 60px;">新增理财信息</h2>
+    <p>
+        产 品 代 码:<input type="text" name="id" style="margin-left: 20px;"/><span id="sp"></span>
+    </p>
+    <p>
+        风 险 评 级:<select name="risk" style="width:160px;margin-left: 20px;">
+        <option value="0">请选择</option>
+        <option value="1">R1</option>
+        <option value="2">R2</option>
+        <option value="3">R3</option>
+    </select>
+    </p>
+    <p>预 期 收 益:<input type="text" name="income" style="margin-left: 20px;"/></p>
+    <p>发售起始日:<input type="text" name="salestarting" style="margin-left: 20px;"/><span>YYYY-MM-DD格式</span></p>
+    <p>发售截止日:<input type="text" name="saleend" style="margin-left: 20px;"/><span>YYYY-MM-DD格式</span></p>
+    <p>产品到期日:<input type="text" name="end" style="margin-left: 20px;"/><span>YYYY-MM-DD格式</span></p>
+    <p style="margin-left: 104px;">
+        <input type="submit" value="保存">
+        <input type="reset"/>
+        <a href="javascript:history.back()"><input type="button" value="返回"/></a>
+    </p>
+</form>
+</body>
+</html>
